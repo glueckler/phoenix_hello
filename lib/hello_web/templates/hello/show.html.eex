@@ -1,0 +1,4 @@
+<div class="phx-hero">
+  <!--btw @message stands for assigns.message-->
+  <h2>Hello and here's your message: <%= @message %></h2>
+</div>

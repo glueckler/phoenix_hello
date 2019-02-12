@@ -1,0 +1,11 @@
+<h2>Routing</h2>
+
+HelloWeb.Router.Helpers.page_path(HelloWeb.Endpoint, :index) is aliased in view templates as Routes.page_path
+
+Whenever possible prefer to pass a "conn" in place of an "Endpoint"
+
+### query strings
+Routes.user_path(Endpoint, :show, 17, admin: true, active: false) --> "/users/17?admin=true&active=false"
+
+### full url instead of path
+Routes.user_url(Endpoint, :index) --> "http://localhost:4000/users"
